@@ -45,7 +45,7 @@ const start = async () => {
   try {
     await connectDb(process.env.MONGO_URI)
 
-    app.listen(5000, () => {
+    app.listen(process.env.PORT, () => {
       console.log(`pazljivo slusam na ${5000}`)
     })
   } catch (e) {
