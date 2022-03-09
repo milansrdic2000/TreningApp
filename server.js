@@ -38,7 +38,7 @@ app.use('/trainingplan', trainingPlanRoute)
 app.use('/trainingsession', trainingSession)
 //app.use('/user', userRoute)
 
-app.get('/da', (req, res) => {
+app.get('/', (req, res) => {
   res.send('dadarin')
 })
 const start = async () => {
